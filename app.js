@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/', (req, res) => {
-
+    res.json({message: "Hi!"});
 });
 
 app.use('/click', (req, res) => {

@@ -14,15 +14,21 @@ class App extends Component {
 
 
     handleClick() {
-        axios.get('https://lit-peak-31831.herokuapp.com/click')
+        // axios.get('https://lit-peak-31831.herokuapp.com/click')
+        //     .then((res) => {
+        //         this.setState({
+        //             content: res.data.content
+        //         })
+        //     })
+        //     .catch((err) => {
+        //         console.error(err);
+        //     });
+        fetch('https://lit-peak-31831.herokuapp.com/click')
             .then((res) => {
                 this.setState({
                     content: res.data.content
                 })
             })
-            .catch((err) => {
-                console.error(err);
-            });
     }
 
     render() {

@@ -32,10 +32,12 @@ app.use((req, res, next) => {
 });
 
 app.use('/', (req, res) => {
+    console.log('/');
     res.json({message: "Hi!"});
 });
 
 app.get('/app', (req, res) => {
+    console.log('/app');
     res.json({message: "Hi, there!"});
 });
 

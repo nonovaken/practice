@@ -35,6 +35,10 @@ app.use('/', (req, res) => {
     res.json({message: "Hi!"});
 });
 
+app.use('/app', (req, res) => {
+    res.json({message: "Hi, there!"});
+});
+
 app.use('/click', (req, res) => {
     res.json({content: 'Hello World!'})
 });
